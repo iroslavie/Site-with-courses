@@ -1,10 +1,10 @@
-import Page1 from '../src/App/Pages/Page1'; // Импортируем Page1.tsx
-import './App.scss'; // Импортируем стили (если они нужны)
+import Page1 from '../src/App/Pages/Page1'; 
+import './App.scss'; 
 
 function App() {
   return (
     <div className="App">
-      <Page1 /> {/* Отображаем компонент Page1 */}
+      <Page1 />
     </div>
   );
 }
