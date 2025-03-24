@@ -1,0 +1,179 @@
+@use "../../../Constants/Constants.scss" as *;
+@use "../../../Constants/FontsConnect.scss" as *;
+@use "../../../Constants/Fonts.scss" as *;
+
+.offer-container {
+    position: relative;
+    overflow: hidden;
+    width: $max-width;
+    height: 555px;
+
+    .tape1 {
+        @include tape-with-text;
+        left: -649.16px;
+        top: 50px;
+        z-index: 2;
+    }
+
+    .tape2 {
+        @include tape-with-text;
+        left: 208.52px;
+        top: 443.72px;
+        z-index: 2;
+    }
+
+    .tape-text-1 {
+        @include tape-text;
+        z-index: 3;
+        top: -205px;
+        left: -165px;
+    }
+
+    .tape-text-2 {
+        @include tape-text;
+        z-index: 3;
+        top: 306px;
+        left: 486px;
+    } 
+
+    .tape3 {
+        @include colorful-tape;
+        left: 228.52px;
+        top: 377.72px;
+        z-index: 1;
+    }
+
+    .tape4 {
+        @include colorful-tape;
+        left: 55.52px;
+        top: -140px;
+        z-index: 1;
+    }
+
+    .borders-of-hacking-container {
+        @include borders;
+        width: 1240px;
+        height: 463.33px;
+
+        .hacking-container {
+            width: 1200px;
+            height: 363px;
+            display: flex;
+            flex-direction: column;
+            background-color: $white-color;
+            border-radius: 20px;
+
+            .borders-of-course-name {
+                @include borders;
+                width: 710.91px;
+                height: 83.43px; 
+                position: relative;
+
+                .course-name {
+                    @extend .unbounded-offer-60px;
+                    width: 670.91px;
+                    height: 49.43px;
+                    text-align: left;
+                }
+            }
+
+            .borders-of-name-description-container {
+                @include borders;
+                width: 592.29px;
+                height: 33.67px;
+
+                .name-description-container {
+                    @extend .unbounded-offer-30px;
+                    width: 552.29px;
+                    height: 24.42px;
+                    text-align: left;
+                }
+            }
+
+            .borders-of-price-container {
+                @include borders;
+                text-align: left;
+                width: 237.98px;
+                height: 38.59px;
+                
+
+                .price-container {
+                    @extend .onest-offer-17px;
+                    width: 197.98px;
+                    height: 17.19px;
+                }
+            }
+
+            .borders-of-description-container {
+                @include borders;
+                width: 685.35px;
+                height: 98.32px;
+                position: relative;
+
+                .description-container {
+                    @extend .onest-offer-20px;
+                    width: 645.35px;
+                    height: 81.91px;
+                    text-align: left;
+                }
+            }
+
+            .borders-of-button {
+                @include borders;
+                width: 541px;
+                height: 69.05px;
+
+                .button {
+                    @extend .onest-button-20px;
+                    width: 501px;
+                    height: 50px;
+                    border-radius: 20px;
+                    border-color: transparent;
+                    background-color: $black-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.borders-of-image {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 1200px;
+    height: 363px;
+
+    .image {
+        position: absolute;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 93.04%),
+        linear-gradient(270deg, rgba(255, 255, 255, 0) 72.07%, #FFFFFF 98.09%),    
+        url(../../../assets/picturesOffer/offerImage.jpeg);
+        width: 610.89px;
+        height: 363px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+.days {
+    position: absolute;
+    width: 200.31px;
+    height: 78.84px;
+    border-radius: 30px;
+    transform: rotate(-15deg);
+    background-color: $black-color;
+    left: 792.35px;
+    top: 164.82px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .days-text {
+        @extend .unbounded-days-30px;
+    }
+}

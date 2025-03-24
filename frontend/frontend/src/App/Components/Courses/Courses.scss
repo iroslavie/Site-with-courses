@@ -1,0 +1,172 @@
+@use "../../../Constants/Constants.scss" as *;
+@use "../../../Constants/FontsConnect.scss" as *;
+@use "../../../Constants/Fonts.scss" as *;
+
+.courses-container::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/picturesCourses/backLine.svg");
+    background-repeat: no-repeat;
+    width: $max-width;
+    height: 690px;
+    top: 803px;
+    display: block;
+    z-index: -1;
+}
+
+.courses-container {
+    width: $max-width;
+    height: 690px;
+
+    .courses-header-container {
+        width: $max-width;
+        height: 56px;
+
+        .borders-courses-header {
+            width: 357.5px;
+            display: flex;
+            justify-content: end;
+
+            .courses-header {
+                @extend .unbounded-courses-60px;
+                width: 317.5px;
+                height: 56px;
+                text-align: left;
+            }
+        }
+    }
+
+    .courses-list-container {
+        width: $max-width;
+
+        .borders-courses-list {
+            width: 1240px;
+            height: 514.33px;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+
+            .courses-list {
+                width: 1200px;
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                [class^= "course-container-"] {
+                    @include courses;
+
+                    [class^= "image-course-container-"] {
+                        height: 250px;
+
+                        [class^= "image-course-"] {
+                            border-radius: 20px;
+                        }
+                    }
+
+                    [class^= "borders-text-course-"] {
+                        width: 295.27px;
+                        height: 162.55px;
+                        display: flex;
+                        justify-content: end;
+
+                        [class^= "text-course-"] {
+                            width: 285px;
+                            height: 162.55px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 14px;
+
+                            [class^= "name-course-"] {
+                                @extend .unbounded-courses-17px;
+                                width: 285px;
+                                height: 34.14px;
+                                text-align: start;
+                                white-space: pre-line;
+                            }
+
+                            [class^= "long-and-type-course-container-"] {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: end;
+                                width: 264px;
+                                height: 21.68px;
+
+                                [class^= "logo-container-"] {
+                                    display: flex;
+                                    height: 21.68px;
+                                    width: 19px;
+                                    align-items: end;
+                                    justify-content: start;
+
+                                    [class^= "logo-course-"] {
+                                        width: 15.44px;
+                                        height: 15.44px;
+                                    }
+                                }
+
+                                [class^= "long-text-course-"] {
+                                    @extend .onest-courses-17px;
+                                    width: 197.98px;
+                                    height: 17.19px;
+                                    text-align: start;
+                                    align-self: center;
+                                }
+                            }
+
+                            [class^= "price-course-container-"] {
+                                width: 285px;
+                                height: 78.74px;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+                                align-items: start;
+
+                                [class^= "price-text-course-"] {
+                                    @extend .unbounded-courses-price-17px;
+                                }
+
+                                [class^= "detail-course"] {
+                                    @extend .montserrat-courses-14px;
+                                }
+                            }
+                        }
+                    }
+
+                    [class^= "borders-button-course-"]{
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                        width: 282.27px;
+                        height: 68.45px;
+
+                        [class^= "button-course"] {
+                            @extend .onest-button-20px;
+                            width: 272px;
+                            height: 50px;
+                            border-radius: 20px;
+                            border: none;
+                            background-color: $courses-buttons;
+                        }
+                    }
+                }
+
+                .course-container-1 {
+                    background-color: $course-1;
+                }
+
+                .course-container-2 {
+                    background-color: $course-2;
+                }
+
+                .course-container-3 {
+                    background-color: $course-3;
+                }
+
+                .course-container-4 {
+                    background-color: $course-4;
+                }
+            }
+        }
+    }
+}

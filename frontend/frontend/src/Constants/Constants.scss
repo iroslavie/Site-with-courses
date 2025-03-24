@@ -1,0 +1,68 @@
+// Цвета элементов
+
+$background-color: #0C0C0C; // цвет фона
+$white-color: #FFFFFF;
+$black-color: #000000;
+$button-color: #5E06D1;
+$tape-color: #FFD13C;
+
+$experts-container-color: rgba(32,90,78,0.5);
+$experts-image-color: rgba(3,26,22,0.5);
+
+$course-1: #0A2324;
+$course-2: #121A34;
+$course-3: #131313;
+$course-4: #100220;
+
+$courses-buttons: rgba(94, 6, 209, 1);
+
+
+
+// Максимальная ширина 
+$max-width: 1280px;
+
+
+//mixins
+
+@mixin courses {
+    width: 292px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+@mixin borders {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+@mixin tape-with-text {
+    position: absolute;
+    width: 1447px;
+    height: 78.84px;
+    background-color: $tape-color;
+    transform: rotate(-30deg);
+}
+
+@mixin tape-text {
+    @extend .onest-tape-30px;
+    position: absolute;
+    word-spacing: 35px;
+    height: 27.08px;
+    width: 1447px;
+    transform: rotate(-30deg);
+}
+
+@mixin colorful-tape {
+    position: absolute;
+    width: 1460.45px;
+    height: 78.86px;
+    transform: rotate(-15deg);
+    background: repeating-linear-gradient(
+        120deg,
+        $tape-color,
+        $tape-color 35px,
+        $black-color 35px,
+        $black-color 85px
+    );
+}

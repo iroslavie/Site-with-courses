@@ -1,0 +1,185 @@
+@use "../../../Constants/Constants.scss" as *;
+@use "../../../Constants/FontsConnect.scss" as *;
+@use "../../../Constants/Fonts.scss" as *;
+
+
+.main-container{
+    width: 1280px;
+    height: 668.2px;
+}
+
+
+.main-background-container {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 1278px;
+    height: 688.2px;
+    z-index: -1;
+}
+
+.main-background {
+    position: absolute;
+    background-image: linear-gradient(289.35deg, rgba(12, 12, 12, 0) 27.88%, #0C0C0C 76.66%),
+    linear-gradient(180deg, rgba(12, 12, 12, 0) 67.8%, #0C0C0C 89.96%),
+    linear-gradient(74.78deg, rgba(12, 12, 12, 0) 17.77%, #0C0C0C 85.75%),
+    url("../../../assets/picturesMain/123.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1057.26px;
+    height: 594.85px;
+    z-index: -1;
+    left: 221.68px;
+}
+
+
+.main-text-container{
+    width: 1280px;
+    height: 167.8px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    
+    .external-main-text-container{
+        display: flex;
+        justify-content: end;
+        width: 1247.95px;
+    }
+
+        .inner-main-text-container {
+            @extend .unbounded-main-74px;
+            width: 1211.95px;
+            height: 150px;
+            text-align: left;
+        }
+}
+
+.description-text-container {
+    width: 1280px;
+    display: flex;
+    justify-content: start;
+
+    .extrnal-description-text-container {
+        width: 585.71px;
+        height: 102.73px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+
+        .description-inner-text-container {
+            @extend .onest-description-20px;
+            width: 545.71px;
+            height: 79.65px;
+            text-align: left;
+        }
+}
+
+
+.external-main-button-container{
+    width: 1280px;
+    display: flex;
+    justify-content: start;
+
+    .main-button-container{
+        width: 526.35px;
+        height: 73px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        .main-button {
+            @extend .onest-description-20px;
+            width: 486px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: $button-color;
+            border-color: transparent;
+        }
+    }
+}
+    
+
+
+.external-experts-container {
+    display: flex;
+    justify-content: start;
+    width: 1280px;
+
+
+    .external-second-experts-container {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 1240px;
+        height: 241.43px;
+
+        .experts-container {
+            width: 348px;
+            height: 200px;
+            border-radius: 20px;
+            background-color: $experts-container-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            
+
+            .borders-of-inner-experts-container{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                width: 340.1px;
+                height: 180.87px;
+
+                .inner-experts-container {
+                    width: 320.1px;
+                    height: 161.46px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                    
+
+
+                    .experts-image-container {
+                        display: flex;
+                        justify-content: space-evenly;
+                        background-color: $experts-image-color;
+                        border-radius: 50%;
+
+                        
+                        .experts-image {
+                            width: 161.48px;
+                            height: 161.46px;
+                            border-radius: 50%;
+                        }
+
+                    }
+
+                    .text-expert-container {
+                        text-align: left;
+
+                        .borders-names-experts-container{
+                            display: flex;
+                            align-items: end;
+                        }
+
+                            .names-experts-container {
+                                @extend .unbounded-experts-17px;
+                                width: 136.78px;
+                                height: 45.79px;
+                            }
+
+                        .experts-level-container {
+                            @extend .onest-experts-17px;
+                            width: 130.92px;
+                            height: 35.98px;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@use "./FontsConnect.scss" as *;
+@use "./Constants.scss" as *;
+
+.montserrat-courses-14px {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-decoration: underline;
+    offset: 0%;
+    text-decoration-thickness: 0%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.unbounded-header-16px {
+    font-family: "Unbounded";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 118%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.unbounded-experts-17px {
+    font-family: "Unbounded";
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 110%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+}
+
+.unbounded-courses-17px {
+    font-family: "Unbounded";
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 112%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+
+}
+
+.unbounded-courses-price-17px {
+    font-family: "Unbounded";
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $white-color;
+}
+
+.onest-experts-17px {
+    font-family: "Onest";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 110%;
+    letter-spacing: 0;
+    color: $white-color;
+}
+
+.onest-courses-17px {
+    font-family: "Onest";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $white-color;
+}
+
+.onest-offer-17px {
+    font-family: "Onest";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $black-color;
+}
+
+.onest-nav-18px {
+    font-family: "Onest";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: $white-color;
+}
+
+.onest-description-20px {
+    font-family: "Onest";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $white-color;
+}
+
+.onest-button-20px {
+    font-family: "Onest";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #F6F6F6;
+}
+
+.onest-offer-20px {
+    font-family: "Onest";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0;
+    color: $black-color;
+}
+
+
+.unbounded-offer-30px {
+    font-family: "Unbounded";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color: $black-color;
+}
+
+.unbounded-days-30px {
+    font-family: "Unbounded";
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 118%;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.onest-tape-30px {
+    font-family: Onest;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118%;
+    letter-spacing: 0;
+    color: $black-color;
+}
+
+.unbounded-courses-60px {
+    font-family: "Unbounded";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 93%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.unbounded-offer-60px {
+    font-family: "Unbounded";
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 93%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $black-color;
+}
+
+.unbounded-main-74px {
+    font-family: "Unbounded";
+    font-weight: 900;
+    font-size: 74px;
+    line-height: 102%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+

@@ -1,0 +1,22 @@
+@use "./Constants/Constants.scss" as *;
+@use "./Constants/FontsConnect.scss" as *;
+
+
+:root {
+  font-family: "Onest";
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: $background-color;
+  flex-direction: column;
+}

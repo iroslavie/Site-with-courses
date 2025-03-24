@@ -1,0 +1,52 @@
+@use "../../../Constants/Constants.scss" as *;
+@use "../../../Constants/FontsConnect.scss" as *;
+@use "../../../Constants/Fonts.scss" as *;
+
+
+.header-container::before {
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.header-container {
+    width: 1280px;
+    height: 95.8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.external-header-container{
+    display: flex;
+    justify-content: end;
+    width: 1231.62px;
+}
+
+.inner-container {
+    width: 1192px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comp-name-container {
+    @extend .unbounded-header-16px;
+    width: 200px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.nav-container {
+    display: flex;
+    gap: 110px;
+}
+
+.nav-link{
+    @extend .onest-nav-18px;
+    display: flex;
+}
