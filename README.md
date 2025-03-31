@@ -1,2 +1,1 @@
-# S_BOGOM
-# Frontend
+Here I do site for course promotion
